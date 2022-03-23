@@ -1,1 +1,1 @@
-# hft-crypto-streaming
+# High Frequency Parallel Crypto Streaming and Valuation

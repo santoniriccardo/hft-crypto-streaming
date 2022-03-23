@@ -13,7 +13,9 @@ Further, there are a number of different constraints, especially given the fact 
 Not only that, but some exchange API's may offer a streaming API, whereas others may offer a pub-sub or polling model. This will further pose challenges and cause us to reconsider some of our parallel approaches as need be.
 
 ## Resources
-We aim to connect to a number of different popular exchange API's, such as Coinbase, Binance, Pyth network, Coin, etc. While these have resources available, they will all be different, and therefore will pose even more unique constraints.
+We aim to connect to a number of different popular exchange API's, such as Coinbase, Binance, Pyth network, Coin, etc. While these have resources available, they will all be different, and therefore will pose even more unique constraints and have their own setup costs. We aim and would prefer to code in c++, though may have to consider go depending on how widely available client libraries are.
+
+Besides for the API's, we do not have much other reference except for internship experience in the HFT space, though not directly with crypto.
 
 ## Goals and Deliverables
 

@@ -15,10 +15,19 @@ Not only that, but some exchange API's may offer a streaming API, whereas others
 ## Resources
 We aim to connect to a number of different popular exchange API's, such as Coinbase, Binance, Pyth network, Coin, etc. While these have resources available, they will all be different, and therefore will pose even more unique constraints and have their own setup costs. We aim and would prefer to code in c++, though may have to consider go depending on how widely available client libraries are.
 
-Besides for the API's, we do not have much other reference except for internship experience in the HFT space, though not directly with crypto.
+Further, we aim to use machines with 32-64 cores available, such as some GHC machines, and PSC machines we used throughout the semester.
+
+Besides for the API's and machines, we do not have much other reference except for internship experience in the HFT space, though not directly with crypto.
 
 ## Goals and Deliverables
 
+### 75 %
+
+### 100 %
+
+### 125 %
+
 ## Platform Choice
+We believe c++ or go will be the most effective, in combination with our platform with a large number of CPUs seeing as we aim to heavily utilize independent cores for their own respective computations. Further, lots of these operations will be io intensive such as streaming information, and will therefore be less suited to a GPU architecture for example.
 
 ## Schedule

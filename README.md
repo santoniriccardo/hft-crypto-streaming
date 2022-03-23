@@ -20,12 +20,21 @@ Further, we aim to use machines with 32-64 cores available, such as some GHC mac
 Besides for the API's and machines, we do not have much other reference except for internship experience in the HFT space, though not directly with crypto.
 
 ## Goals and Deliverables
+There are a number of different milestones that are applicable for our project.
 
 ### 75 %
+We aim to be connected to at least 5 exchanges, streaming at least 1 asset from each exchange. The information from these exchanges will feed into one unified valuation model. Synchronization will need to be performed here as necessary.
+
+Further, we will want to have experimented with a number of different parallelization approaches beyond our baseline linear code, and have chosen the best speedup to continue experimenting with further.
 
 ### 100 %
+We aim to be connected to at least 5 exchanges, streaming at lesat 5 assets from each exchange. This will require parallelism along both axis', probably splitting up each exchage + asset pair into their own core. Further, each asset will have their own valuation service running on a separate core, with concurrency/synchronization as necessary for the API streaming cores to send their information to this other core.
+
+Here, we will need to experiment more heavily with the communication/message passing amongst cores to pass market data to the correct computation core. Further, we will need to experiment with paralellization strategies amongst the core(s) performing the actualy valuation model.
 
 ### 125 %
+We aim to connect to many more exchanges + asset pairs, increasing the number of cores + resources utilized and performance at the same time. Further, we would like to improve valuation model engine, and perform larger degrees of parallelism along this axis as we increase the complexity of the valuation models.
+
 
 ## Platform Choice
 We believe c++ or go will be the most effective, in combination with our platform with a large number of CPUs seeing as we aim to heavily utilize independent cores for their own respective computations. Further, lots of these operations will be io intensive such as streaming information, and will therefore be less suited to a GPU architecture for example.

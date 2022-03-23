@@ -35,8 +35,25 @@ Here, we will need to experiment more heavily with the communication/message pas
 ### 125 %
 We aim to connect to many more exchanges + asset pairs, increasing the number of cores + resources utilized and performance at the same time. Further, we would like to improve valuation model engine, and perform larger degrees of parallelism along this axis as we increase the complexity of the valuation models.
 
+### Overall
+Overall, we aim to experiment with a number of different parallelization approaches given the different axis' of parallelism and actual problem constraints. Further, we aim to publish speedup graphs for different strategies, and justify chosen candidates for further experimentation.
 
 ## Platform Choice
 We believe c++ or go will be the most effective, in combination with our platform with a large number of CPUs seeing as we aim to heavily utilize independent cores for their own respective computations. Further, lots of these operations will be io intensive such as streaming information, and will therefore be less suited to a GPU architecture for example.
 
 ## Schedule
+
+### Week 1
+Connect to first exchange. Stream asset information for one or more assets.
+
+### Week 2
+Finish connections for at least 5 exchanges. Stream asset information for one or more assets from each
+
+### Week 3
+Experiment and solidify parallelism approaches for various exchange + asset pairs. Introduce basic valuation model that these each feed into.
+
+### Week 4
+Continue working on parallelism of streaming of asset information from various exchanges. Enhance valuation model and parallelism in this computation, as well as the actual message passing amongst cores.
+
+### Week 5
+Either continue working on unfinished tasks from weeks 3/4, or extend to stream information from more exchanges + asset classes. Work on valuation model more.

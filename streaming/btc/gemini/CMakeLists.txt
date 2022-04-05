@@ -1,0 +1,5 @@
+set(NAME btc-gemini)
+project(${NAME})
+add_compile_definitions(CCAPI_ENABLE_SERVICE_MARKET_DATA)
+add_compile_definitions(CCAPI_ENABLE_EXCHANGE_GEMINI)
+add_executable(${NAME} main.cpp)

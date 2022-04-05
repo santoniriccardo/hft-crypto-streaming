@@ -1,0 +1,8 @@
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles/edit_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles/rebuild_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/coinbase/CMakeFiles/btc-coinbase.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/coinbase/CMakeFiles/edit_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/coinbase/CMakeFiles/rebuild_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/gemini/CMakeFiles/btc-gemini.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/gemini/CMakeFiles/edit_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/gemini/CMakeFiles/rebuild_cache.dir

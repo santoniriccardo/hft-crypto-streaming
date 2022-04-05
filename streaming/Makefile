@@ -117,6 +117,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named btc-binance
+
+# Build rule for target.
+btc-binance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc-binance
+.PHONY : btc-binance
+
+# fast build rule for target.
+btc-binance/fast:
+	$(MAKE) $(MAKESILENT) -f btc/binance/CMakeFiles/btc-binance.dir/build.make btc/binance/CMakeFiles/btc-binance.dir/build
+.PHONY : btc-binance/fast
+
+#=============================================================================
+# Target rules for targets named btc-binance-us
+
+# Build rule for target.
+btc-binance-us: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc-binance-us
+.PHONY : btc-binance-us
+
+# fast build rule for target.
+btc-binance-us/fast:
+	$(MAKE) $(MAKESILENT) -f btc/binance-us/CMakeFiles/btc-binance-us.dir/build.make btc/binance-us/CMakeFiles/btc-binance-us.dir/build
+.PHONY : btc-binance-us/fast
+
+#=============================================================================
+# Target rules for targets named btc-bitfinex
+
+# Build rule for target.
+btc-bitfinex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc-bitfinex
+.PHONY : btc-bitfinex
+
+# fast build rule for target.
+btc-bitfinex/fast:
+	$(MAKE) $(MAKESILENT) -f btc/bitfinex/CMakeFiles/btc-bitfinex.dir/build.make btc/bitfinex/CMakeFiles/btc-bitfinex.dir/build
+.PHONY : btc-bitfinex/fast
+
+#=============================================================================
+# Target rules for targets named btc-bitmex
+
+# Build rule for target.
+btc-bitmex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc-bitmex
+.PHONY : btc-bitmex
+
+# fast build rule for target.
+btc-bitmex/fast:
+	$(MAKE) $(MAKESILENT) -f btc/bitmex/CMakeFiles/btc-bitmex.dir/build.make btc/bitmex/CMakeFiles/btc-bitmex.dir/build
+.PHONY : btc-bitmex/fast
+
+#=============================================================================
+# Target rules for targets named btc-bitstamp
+
+# Build rule for target.
+btc-bitstamp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc-bitstamp
+.PHONY : btc-bitstamp
+
+# fast build rule for target.
+btc-bitstamp/fast:
+	$(MAKE) $(MAKESILENT) -f btc/bitstamp/CMakeFiles/btc-bitstamp.dir/build.make btc/bitstamp/CMakeFiles/btc-bitstamp.dir/build
+.PHONY : btc-bitstamp/fast
+
+#=============================================================================
 # Target rules for targets named btc-coinbase
 
 # Build rule for target.
@@ -128,6 +193,19 @@ btc-coinbase: cmake_check_build_system
 btc-coinbase/fast:
 	$(MAKE) $(MAKESILENT) -f btc/coinbase/CMakeFiles/btc-coinbase.dir/build.make btc/coinbase/CMakeFiles/btc-coinbase.dir/build
 .PHONY : btc-coinbase/fast
+
+#=============================================================================
+# Target rules for targets named btc-cryptocom
+
+# Build rule for target.
+btc-cryptocom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc-cryptocom
+.PHONY : btc-cryptocom
+
+# fast build rule for target.
+btc-cryptocom/fast:
+	$(MAKE) $(MAKESILENT) -f btc/cryptocom/CMakeFiles/btc-cryptocom.dir/build.make btc/cryptocom/CMakeFiles/btc-cryptocom.dir/build
+.PHONY : btc-cryptocom/fast
 
 #=============================================================================
 # Target rules for targets named btc-gemini
@@ -150,7 +228,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... btc-binance"
+	@echo "... btc-binance-us"
+	@echo "... btc-bitfinex"
+	@echo "... btc-bitmex"
+	@echo "... btc-bitstamp"
 	@echo "... btc-coinbase"
+	@echo "... btc-cryptocom"
 	@echo "... btc-gemini"
 .PHONY : help
 

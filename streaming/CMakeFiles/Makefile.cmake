@@ -11,7 +11,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.3/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "btc/binance-us/CMakeLists.txt"
+  "btc/binance/CMakeLists.txt"
+  "btc/bitfinex/CMakeLists.txt"
+  "btc/bitmex/CMakeLists.txt"
+  "btc/bitstamp/CMakeLists.txt"
   "btc/coinbase/CMakeLists.txt"
+  "btc/cryptocom/CMakeLists.txt"
   "btc/gemini/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -49,12 +55,24 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "btc/binance/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "btc/binance-us/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "btc/bitfinex/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "btc/bitmex/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "btc/bitstamp/CMakeFiles/CMakeDirectoryInformation.cmake"
   "btc/coinbase/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "btc/cryptocom/CMakeFiles/CMakeDirectoryInformation.cmake"
   "btc/gemini/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "btc/binance/CMakeFiles/btc-binance.dir/DependInfo.cmake"
+  "btc/binance-us/CMakeFiles/btc-binance-us.dir/DependInfo.cmake"
+  "btc/bitfinex/CMakeFiles/btc-bitfinex.dir/DependInfo.cmake"
+  "btc/bitmex/CMakeFiles/btc-bitmex.dir/DependInfo.cmake"
+  "btc/bitstamp/CMakeFiles/btc-bitstamp.dir/DependInfo.cmake"
   "btc/coinbase/CMakeFiles/btc-coinbase.dir/DependInfo.cmake"
+  "btc/cryptocom/CMakeFiles/btc-cryptocom.dir/DependInfo.cmake"
   "btc/gemini/CMakeFiles/btc-gemini.dir/DependInfo.cmake"
   )

@@ -226,6 +226,51 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
 
 //Value Computed by CMake
+btc-binance-us_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/binance-us
+
+//Value Computed by CMake
+btc-binance-us_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-binance-us_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/binance-us
+
+//Value Computed by CMake
+btc-binance_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/binance
+
+//Value Computed by CMake
+btc-binance_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-binance_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/binance
+
+//Value Computed by CMake
+btc-bitfinex_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitfinex
+
+//Value Computed by CMake
+btc-bitfinex_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-bitfinex_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitfinex
+
+//Value Computed by CMake
+btc-bitmex_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitmex
+
+//Value Computed by CMake
+btc-bitmex_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-bitmex_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitmex
+
+//Value Computed by CMake
+btc-bitstamp_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitstamp
+
+//Value Computed by CMake
+btc-bitstamp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-bitstamp_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitstamp
+
+//Value Computed by CMake
 btc-coinbase_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/coinbase
 
 //Value Computed by CMake
@@ -235,6 +280,15 @@ btc-coinbase_IS_TOP_LEVEL:STATIC=OFF
 btc-coinbase_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/coinbase
 
 //Value Computed by CMake
+btc-cryptocom_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/cryptocom
+
+//Value Computed by CMake
+btc-cryptocom_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-cryptocom_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/cryptocom
+
+//Value Computed by CMake
 btc-gemini_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/gemini
 
 //Value Computed by CMake
@@ -242,6 +296,15 @@ btc-gemini_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 btc-gemini_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/gemini
+
+//Value Computed by CMake
+btc-kraken_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/kraken
+
+//Value Computed by CMake
+btc-kraken_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+btc-kraken_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/kraken
 
 //Value Computed by CMake
 coinbase-btc_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/coinbase-btc
@@ -360,7 +423,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

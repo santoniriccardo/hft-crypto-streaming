@@ -63,19 +63,112 @@ CMAKE_BINARY_DIR = /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streami
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: btc/binance/all
+all: btc/binance-us/all
+all: btc/bitfinex/all
+all: btc/bitmex/all
+all: btc/bitstamp/all
 all: btc/coinbase/all
+all: btc/cryptocom/all
 all: btc/gemini/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: btc/binance/preinstall
+preinstall: btc/binance-us/preinstall
+preinstall: btc/bitfinex/preinstall
+preinstall: btc/bitmex/preinstall
+preinstall: btc/bitstamp/preinstall
 preinstall: btc/coinbase/preinstall
+preinstall: btc/cryptocom/preinstall
 preinstall: btc/gemini/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: btc/binance/clean
+clean: btc/binance-us/clean
+clean: btc/bitfinex/clean
+clean: btc/bitmex/clean
+clean: btc/bitstamp/clean
 clean: btc/coinbase/clean
+clean: btc/cryptocom/clean
 clean: btc/gemini/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory btc/binance
+
+# Recursive "all" directory target.
+btc/binance/all: btc/binance/CMakeFiles/btc-binance.dir/all
+.PHONY : btc/binance/all
+
+# Recursive "preinstall" directory target.
+btc/binance/preinstall:
+.PHONY : btc/binance/preinstall
+
+# Recursive "clean" directory target.
+btc/binance/clean: btc/binance/CMakeFiles/btc-binance.dir/clean
+.PHONY : btc/binance/clean
+
+#=============================================================================
+# Directory level rules for directory btc/binance-us
+
+# Recursive "all" directory target.
+btc/binance-us/all: btc/binance-us/CMakeFiles/btc-binance-us.dir/all
+.PHONY : btc/binance-us/all
+
+# Recursive "preinstall" directory target.
+btc/binance-us/preinstall:
+.PHONY : btc/binance-us/preinstall
+
+# Recursive "clean" directory target.
+btc/binance-us/clean: btc/binance-us/CMakeFiles/btc-binance-us.dir/clean
+.PHONY : btc/binance-us/clean
+
+#=============================================================================
+# Directory level rules for directory btc/bitfinex
+
+# Recursive "all" directory target.
+btc/bitfinex/all: btc/bitfinex/CMakeFiles/btc-bitfinex.dir/all
+.PHONY : btc/bitfinex/all
+
+# Recursive "preinstall" directory target.
+btc/bitfinex/preinstall:
+.PHONY : btc/bitfinex/preinstall
+
+# Recursive "clean" directory target.
+btc/bitfinex/clean: btc/bitfinex/CMakeFiles/btc-bitfinex.dir/clean
+.PHONY : btc/bitfinex/clean
+
+#=============================================================================
+# Directory level rules for directory btc/bitmex
+
+# Recursive "all" directory target.
+btc/bitmex/all: btc/bitmex/CMakeFiles/btc-bitmex.dir/all
+.PHONY : btc/bitmex/all
+
+# Recursive "preinstall" directory target.
+btc/bitmex/preinstall:
+.PHONY : btc/bitmex/preinstall
+
+# Recursive "clean" directory target.
+btc/bitmex/clean: btc/bitmex/CMakeFiles/btc-bitmex.dir/clean
+.PHONY : btc/bitmex/clean
+
+#=============================================================================
+# Directory level rules for directory btc/bitstamp
+
+# Recursive "all" directory target.
+btc/bitstamp/all: btc/bitstamp/CMakeFiles/btc-bitstamp.dir/all
+.PHONY : btc/bitstamp/all
+
+# Recursive "preinstall" directory target.
+btc/bitstamp/preinstall:
+.PHONY : btc/bitstamp/preinstall
+
+# Recursive "clean" directory target.
+btc/bitstamp/clean: btc/bitstamp/CMakeFiles/btc-bitstamp.dir/clean
+.PHONY : btc/bitstamp/clean
 
 #=============================================================================
 # Directory level rules for directory btc/coinbase
@@ -93,6 +186,21 @@ btc/coinbase/clean: btc/coinbase/CMakeFiles/btc-coinbase.dir/clean
 .PHONY : btc/coinbase/clean
 
 #=============================================================================
+# Directory level rules for directory btc/cryptocom
+
+# Recursive "all" directory target.
+btc/cryptocom/all: btc/cryptocom/CMakeFiles/btc-cryptocom.dir/all
+.PHONY : btc/cryptocom/all
+
+# Recursive "preinstall" directory target.
+btc/cryptocom/preinstall:
+.PHONY : btc/cryptocom/preinstall
+
+# Recursive "clean" directory target.
+btc/cryptocom/clean: btc/cryptocom/CMakeFiles/btc-cryptocom.dir/clean
+.PHONY : btc/cryptocom/clean
+
+#=============================================================================
 # Directory level rules for directory btc/gemini
 
 # Recursive "all" directory target.
@@ -108,13 +216,143 @@ btc/gemini/clean: btc/gemini/CMakeFiles/btc-gemini.dir/clean
 .PHONY : btc/gemini/clean
 
 #=============================================================================
+# Target rules for target btc/binance/CMakeFiles/btc-binance.dir
+
+# All Build rule for target.
+btc/binance/CMakeFiles/btc-binance.dir/all:
+	$(MAKE) $(MAKESILENT) -f btc/binance/CMakeFiles/btc-binance.dir/build.make btc/binance/CMakeFiles/btc-binance.dir/depend
+	$(MAKE) $(MAKESILENT) -f btc/binance/CMakeFiles/btc-binance.dir/build.make btc/binance/CMakeFiles/btc-binance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=1,2 "Built target btc-binance"
+.PHONY : btc/binance/CMakeFiles/btc-binance.dir/all
+
+# Build rule for subdir invocation for target.
+btc/binance/CMakeFiles/btc-binance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc/binance/CMakeFiles/btc-binance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : btc/binance/CMakeFiles/btc-binance.dir/rule
+
+# Convenience name for target.
+btc-binance: btc/binance/CMakeFiles/btc-binance.dir/rule
+.PHONY : btc-binance
+
+# clean rule for target.
+btc/binance/CMakeFiles/btc-binance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f btc/binance/CMakeFiles/btc-binance.dir/build.make btc/binance/CMakeFiles/btc-binance.dir/clean
+.PHONY : btc/binance/CMakeFiles/btc-binance.dir/clean
+
+#=============================================================================
+# Target rules for target btc/binance-us/CMakeFiles/btc-binance-us.dir
+
+# All Build rule for target.
+btc/binance-us/CMakeFiles/btc-binance-us.dir/all:
+	$(MAKE) $(MAKESILENT) -f btc/binance-us/CMakeFiles/btc-binance-us.dir/build.make btc/binance-us/CMakeFiles/btc-binance-us.dir/depend
+	$(MAKE) $(MAKESILENT) -f btc/binance-us/CMakeFiles/btc-binance-us.dir/build.make btc/binance-us/CMakeFiles/btc-binance-us.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=3,4 "Built target btc-binance-us"
+.PHONY : btc/binance-us/CMakeFiles/btc-binance-us.dir/all
+
+# Build rule for subdir invocation for target.
+btc/binance-us/CMakeFiles/btc-binance-us.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc/binance-us/CMakeFiles/btc-binance-us.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : btc/binance-us/CMakeFiles/btc-binance-us.dir/rule
+
+# Convenience name for target.
+btc-binance-us: btc/binance-us/CMakeFiles/btc-binance-us.dir/rule
+.PHONY : btc-binance-us
+
+# clean rule for target.
+btc/binance-us/CMakeFiles/btc-binance-us.dir/clean:
+	$(MAKE) $(MAKESILENT) -f btc/binance-us/CMakeFiles/btc-binance-us.dir/build.make btc/binance-us/CMakeFiles/btc-binance-us.dir/clean
+.PHONY : btc/binance-us/CMakeFiles/btc-binance-us.dir/clean
+
+#=============================================================================
+# Target rules for target btc/bitfinex/CMakeFiles/btc-bitfinex.dir
+
+# All Build rule for target.
+btc/bitfinex/CMakeFiles/btc-bitfinex.dir/all:
+	$(MAKE) $(MAKESILENT) -f btc/bitfinex/CMakeFiles/btc-bitfinex.dir/build.make btc/bitfinex/CMakeFiles/btc-bitfinex.dir/depend
+	$(MAKE) $(MAKESILENT) -f btc/bitfinex/CMakeFiles/btc-bitfinex.dir/build.make btc/bitfinex/CMakeFiles/btc-bitfinex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=5,6 "Built target btc-bitfinex"
+.PHONY : btc/bitfinex/CMakeFiles/btc-bitfinex.dir/all
+
+# Build rule for subdir invocation for target.
+btc/bitfinex/CMakeFiles/btc-bitfinex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc/bitfinex/CMakeFiles/btc-bitfinex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : btc/bitfinex/CMakeFiles/btc-bitfinex.dir/rule
+
+# Convenience name for target.
+btc-bitfinex: btc/bitfinex/CMakeFiles/btc-bitfinex.dir/rule
+.PHONY : btc-bitfinex
+
+# clean rule for target.
+btc/bitfinex/CMakeFiles/btc-bitfinex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f btc/bitfinex/CMakeFiles/btc-bitfinex.dir/build.make btc/bitfinex/CMakeFiles/btc-bitfinex.dir/clean
+.PHONY : btc/bitfinex/CMakeFiles/btc-bitfinex.dir/clean
+
+#=============================================================================
+# Target rules for target btc/bitmex/CMakeFiles/btc-bitmex.dir
+
+# All Build rule for target.
+btc/bitmex/CMakeFiles/btc-bitmex.dir/all:
+	$(MAKE) $(MAKESILENT) -f btc/bitmex/CMakeFiles/btc-bitmex.dir/build.make btc/bitmex/CMakeFiles/btc-bitmex.dir/depend
+	$(MAKE) $(MAKESILENT) -f btc/bitmex/CMakeFiles/btc-bitmex.dir/build.make btc/bitmex/CMakeFiles/btc-bitmex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=7,8 "Built target btc-bitmex"
+.PHONY : btc/bitmex/CMakeFiles/btc-bitmex.dir/all
+
+# Build rule for subdir invocation for target.
+btc/bitmex/CMakeFiles/btc-bitmex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc/bitmex/CMakeFiles/btc-bitmex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : btc/bitmex/CMakeFiles/btc-bitmex.dir/rule
+
+# Convenience name for target.
+btc-bitmex: btc/bitmex/CMakeFiles/btc-bitmex.dir/rule
+.PHONY : btc-bitmex
+
+# clean rule for target.
+btc/bitmex/CMakeFiles/btc-bitmex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f btc/bitmex/CMakeFiles/btc-bitmex.dir/build.make btc/bitmex/CMakeFiles/btc-bitmex.dir/clean
+.PHONY : btc/bitmex/CMakeFiles/btc-bitmex.dir/clean
+
+#=============================================================================
+# Target rules for target btc/bitstamp/CMakeFiles/btc-bitstamp.dir
+
+# All Build rule for target.
+btc/bitstamp/CMakeFiles/btc-bitstamp.dir/all:
+	$(MAKE) $(MAKESILENT) -f btc/bitstamp/CMakeFiles/btc-bitstamp.dir/build.make btc/bitstamp/CMakeFiles/btc-bitstamp.dir/depend
+	$(MAKE) $(MAKESILENT) -f btc/bitstamp/CMakeFiles/btc-bitstamp.dir/build.make btc/bitstamp/CMakeFiles/btc-bitstamp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=9,10 "Built target btc-bitstamp"
+.PHONY : btc/bitstamp/CMakeFiles/btc-bitstamp.dir/all
+
+# Build rule for subdir invocation for target.
+btc/bitstamp/CMakeFiles/btc-bitstamp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc/bitstamp/CMakeFiles/btc-bitstamp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : btc/bitstamp/CMakeFiles/btc-bitstamp.dir/rule
+
+# Convenience name for target.
+btc-bitstamp: btc/bitstamp/CMakeFiles/btc-bitstamp.dir/rule
+.PHONY : btc-bitstamp
+
+# clean rule for target.
+btc/bitstamp/CMakeFiles/btc-bitstamp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f btc/bitstamp/CMakeFiles/btc-bitstamp.dir/build.make btc/bitstamp/CMakeFiles/btc-bitstamp.dir/clean
+.PHONY : btc/bitstamp/CMakeFiles/btc-bitstamp.dir/clean
+
+#=============================================================================
 # Target rules for target btc/coinbase/CMakeFiles/btc-coinbase.dir
 
 # All Build rule for target.
 btc/coinbase/CMakeFiles/btc-coinbase.dir/all:
 	$(MAKE) $(MAKESILENT) -f btc/coinbase/CMakeFiles/btc-coinbase.dir/build.make btc/coinbase/CMakeFiles/btc-coinbase.dir/depend
 	$(MAKE) $(MAKESILENT) -f btc/coinbase/CMakeFiles/btc-coinbase.dir/build.make btc/coinbase/CMakeFiles/btc-coinbase.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=1,2 "Built target btc-coinbase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=11,12 "Built target btc-coinbase"
 .PHONY : btc/coinbase/CMakeFiles/btc-coinbase.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,13 +372,39 @@ btc/coinbase/CMakeFiles/btc-coinbase.dir/clean:
 .PHONY : btc/coinbase/CMakeFiles/btc-coinbase.dir/clean
 
 #=============================================================================
+# Target rules for target btc/cryptocom/CMakeFiles/btc-cryptocom.dir
+
+# All Build rule for target.
+btc/cryptocom/CMakeFiles/btc-cryptocom.dir/all:
+	$(MAKE) $(MAKESILENT) -f btc/cryptocom/CMakeFiles/btc-cryptocom.dir/build.make btc/cryptocom/CMakeFiles/btc-cryptocom.dir/depend
+	$(MAKE) $(MAKESILENT) -f btc/cryptocom/CMakeFiles/btc-cryptocom.dir/build.make btc/cryptocom/CMakeFiles/btc-cryptocom.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=13,14 "Built target btc-cryptocom"
+.PHONY : btc/cryptocom/CMakeFiles/btc-cryptocom.dir/all
+
+# Build rule for subdir invocation for target.
+btc/cryptocom/CMakeFiles/btc-cryptocom.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btc/cryptocom/CMakeFiles/btc-cryptocom.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : btc/cryptocom/CMakeFiles/btc-cryptocom.dir/rule
+
+# Convenience name for target.
+btc-cryptocom: btc/cryptocom/CMakeFiles/btc-cryptocom.dir/rule
+.PHONY : btc-cryptocom
+
+# clean rule for target.
+btc/cryptocom/CMakeFiles/btc-cryptocom.dir/clean:
+	$(MAKE) $(MAKESILENT) -f btc/cryptocom/CMakeFiles/btc-cryptocom.dir/build.make btc/cryptocom/CMakeFiles/btc-cryptocom.dir/clean
+.PHONY : btc/cryptocom/CMakeFiles/btc-cryptocom.dir/clean
+
+#=============================================================================
 # Target rules for target btc/gemini/CMakeFiles/btc-gemini.dir
 
 # All Build rule for target.
 btc/gemini/CMakeFiles/btc-gemini.dir/all:
 	$(MAKE) $(MAKESILENT) -f btc/gemini/CMakeFiles/btc-gemini.dir/build.make btc/gemini/CMakeFiles/btc-gemini.dir/depend
 	$(MAKE) $(MAKESILENT) -f btc/gemini/CMakeFiles/btc-gemini.dir/build.make btc/gemini/CMakeFiles/btc-gemini.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=3,4 "Built target btc-gemini"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=15,16 "Built target btc-gemini"
 .PHONY : btc/gemini/CMakeFiles/btc-gemini.dir/all
 
 # Build rule for subdir invocation for target.

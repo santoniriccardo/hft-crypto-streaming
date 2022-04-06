@@ -220,6 +220,123 @@ btc-gemini/fast:
 	$(MAKE) $(MAKESILENT) -f btc/gemini/CMakeFiles/btc-gemini.dir/build.make btc/gemini/CMakeFiles/btc-gemini.dir/build
 .PHONY : btc-gemini/fast
 
+#=============================================================================
+# Target rules for targets named eth-binance
+
+# Build rule for target.
+eth-binance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-binance
+.PHONY : eth-binance
+
+# fast build rule for target.
+eth-binance/fast:
+	$(MAKE) $(MAKESILENT) -f eth/binance/CMakeFiles/eth-binance.dir/build.make eth/binance/CMakeFiles/eth-binance.dir/build
+.PHONY : eth-binance/fast
+
+#=============================================================================
+# Target rules for targets named eth-binance-us
+
+# Build rule for target.
+eth-binance-us: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-binance-us
+.PHONY : eth-binance-us
+
+# fast build rule for target.
+eth-binance-us/fast:
+	$(MAKE) $(MAKESILENT) -f eth/binance-us/CMakeFiles/eth-binance-us.dir/build.make eth/binance-us/CMakeFiles/eth-binance-us.dir/build
+.PHONY : eth-binance-us/fast
+
+#=============================================================================
+# Target rules for targets named eth-bitfinex
+
+# Build rule for target.
+eth-bitfinex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-bitfinex
+.PHONY : eth-bitfinex
+
+# fast build rule for target.
+eth-bitfinex/fast:
+	$(MAKE) $(MAKESILENT) -f eth/bitfinex/CMakeFiles/eth-bitfinex.dir/build.make eth/bitfinex/CMakeFiles/eth-bitfinex.dir/build
+.PHONY : eth-bitfinex/fast
+
+#=============================================================================
+# Target rules for targets named eth-bitmex
+
+# Build rule for target.
+eth-bitmex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-bitmex
+.PHONY : eth-bitmex
+
+# fast build rule for target.
+eth-bitmex/fast:
+	$(MAKE) $(MAKESILENT) -f eth/bitmex/CMakeFiles/eth-bitmex.dir/build.make eth/bitmex/CMakeFiles/eth-bitmex.dir/build
+.PHONY : eth-bitmex/fast
+
+#=============================================================================
+# Target rules for targets named eth-bitstamp
+
+# Build rule for target.
+eth-bitstamp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-bitstamp
+.PHONY : eth-bitstamp
+
+# fast build rule for target.
+eth-bitstamp/fast:
+	$(MAKE) $(MAKESILENT) -f eth/bitstamp/CMakeFiles/eth-bitstamp.dir/build.make eth/bitstamp/CMakeFiles/eth-bitstamp.dir/build
+.PHONY : eth-bitstamp/fast
+
+#=============================================================================
+# Target rules for targets named eth-coinbase
+
+# Build rule for target.
+eth-coinbase: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-coinbase
+.PHONY : eth-coinbase
+
+# fast build rule for target.
+eth-coinbase/fast:
+	$(MAKE) $(MAKESILENT) -f eth/coinbase/CMakeFiles/eth-coinbase.dir/build.make eth/coinbase/CMakeFiles/eth-coinbase.dir/build
+.PHONY : eth-coinbase/fast
+
+#=============================================================================
+# Target rules for targets named eth-cryptocom
+
+# Build rule for target.
+eth-cryptocom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-cryptocom
+.PHONY : eth-cryptocom
+
+# fast build rule for target.
+eth-cryptocom/fast:
+	$(MAKE) $(MAKESILENT) -f eth/cryptocom/CMakeFiles/eth-cryptocom.dir/build.make eth/cryptocom/CMakeFiles/eth-cryptocom.dir/build
+.PHONY : eth-cryptocom/fast
+
+#=============================================================================
+# Target rules for targets named eth-gemini
+
+# Build rule for target.
+eth-gemini: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-gemini
+.PHONY : eth-gemini
+
+# fast build rule for target.
+eth-gemini/fast:
+	$(MAKE) $(MAKESILENT) -f eth/gemini/CMakeFiles/eth-gemini.dir/build.make eth/gemini/CMakeFiles/eth-gemini.dir/build
+.PHONY : eth-gemini/fast
+
+#=============================================================================
+# Target rules for targets named sequential
+
+# Build rule for target.
+sequential: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sequential
+.PHONY : sequential
+
+# fast build rule for target.
+sequential/fast:
+	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/build
+.PHONY : sequential/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +353,15 @@ help:
 	@echo "... btc-coinbase"
 	@echo "... btc-cryptocom"
 	@echo "... btc-gemini"
+	@echo "... eth-binance"
+	@echo "... eth-binance-us"
+	@echo "... eth-bitfinex"
+	@echo "... eth-bitmex"
+	@echo "... eth-bitstamp"
+	@echo "... eth-coinbase"
+	@echo "... eth-cryptocom"
+	@echo "... eth-gemini"
+	@echo "... sequential"
 .PHONY : help
 
 

@@ -71,6 +71,15 @@ all: btc/bitstamp/all
 all: btc/coinbase/all
 all: btc/cryptocom/all
 all: btc/gemini/all
+all: eth/binance/all
+all: eth/binance-us/all
+all: eth/bitfinex/all
+all: eth/bitmex/all
+all: eth/bitstamp/all
+all: eth/coinbase/all
+all: eth/cryptocom/all
+all: eth/gemini/all
+all: sequential/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -82,6 +91,15 @@ preinstall: btc/bitstamp/preinstall
 preinstall: btc/coinbase/preinstall
 preinstall: btc/cryptocom/preinstall
 preinstall: btc/gemini/preinstall
+preinstall: eth/binance/preinstall
+preinstall: eth/binance-us/preinstall
+preinstall: eth/bitfinex/preinstall
+preinstall: eth/bitmex/preinstall
+preinstall: eth/bitstamp/preinstall
+preinstall: eth/coinbase/preinstall
+preinstall: eth/cryptocom/preinstall
+preinstall: eth/gemini/preinstall
+preinstall: sequential/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -93,6 +111,15 @@ clean: btc/bitstamp/clean
 clean: btc/coinbase/clean
 clean: btc/cryptocom/clean
 clean: btc/gemini/clean
+clean: eth/binance/clean
+clean: eth/binance-us/clean
+clean: eth/bitfinex/clean
+clean: eth/bitmex/clean
+clean: eth/bitstamp/clean
+clean: eth/coinbase/clean
+clean: eth/cryptocom/clean
+clean: eth/gemini/clean
+clean: sequential/clean
 .PHONY : clean
 
 #=============================================================================
@@ -214,6 +241,141 @@ btc/gemini/preinstall:
 # Recursive "clean" directory target.
 btc/gemini/clean: btc/gemini/CMakeFiles/btc-gemini.dir/clean
 .PHONY : btc/gemini/clean
+
+#=============================================================================
+# Directory level rules for directory eth/binance
+
+# Recursive "all" directory target.
+eth/binance/all: eth/binance/CMakeFiles/eth-binance.dir/all
+.PHONY : eth/binance/all
+
+# Recursive "preinstall" directory target.
+eth/binance/preinstall:
+.PHONY : eth/binance/preinstall
+
+# Recursive "clean" directory target.
+eth/binance/clean: eth/binance/CMakeFiles/eth-binance.dir/clean
+.PHONY : eth/binance/clean
+
+#=============================================================================
+# Directory level rules for directory eth/binance-us
+
+# Recursive "all" directory target.
+eth/binance-us/all: eth/binance-us/CMakeFiles/eth-binance-us.dir/all
+.PHONY : eth/binance-us/all
+
+# Recursive "preinstall" directory target.
+eth/binance-us/preinstall:
+.PHONY : eth/binance-us/preinstall
+
+# Recursive "clean" directory target.
+eth/binance-us/clean: eth/binance-us/CMakeFiles/eth-binance-us.dir/clean
+.PHONY : eth/binance-us/clean
+
+#=============================================================================
+# Directory level rules for directory eth/bitfinex
+
+# Recursive "all" directory target.
+eth/bitfinex/all: eth/bitfinex/CMakeFiles/eth-bitfinex.dir/all
+.PHONY : eth/bitfinex/all
+
+# Recursive "preinstall" directory target.
+eth/bitfinex/preinstall:
+.PHONY : eth/bitfinex/preinstall
+
+# Recursive "clean" directory target.
+eth/bitfinex/clean: eth/bitfinex/CMakeFiles/eth-bitfinex.dir/clean
+.PHONY : eth/bitfinex/clean
+
+#=============================================================================
+# Directory level rules for directory eth/bitmex
+
+# Recursive "all" directory target.
+eth/bitmex/all: eth/bitmex/CMakeFiles/eth-bitmex.dir/all
+.PHONY : eth/bitmex/all
+
+# Recursive "preinstall" directory target.
+eth/bitmex/preinstall:
+.PHONY : eth/bitmex/preinstall
+
+# Recursive "clean" directory target.
+eth/bitmex/clean: eth/bitmex/CMakeFiles/eth-bitmex.dir/clean
+.PHONY : eth/bitmex/clean
+
+#=============================================================================
+# Directory level rules for directory eth/bitstamp
+
+# Recursive "all" directory target.
+eth/bitstamp/all: eth/bitstamp/CMakeFiles/eth-bitstamp.dir/all
+.PHONY : eth/bitstamp/all
+
+# Recursive "preinstall" directory target.
+eth/bitstamp/preinstall:
+.PHONY : eth/bitstamp/preinstall
+
+# Recursive "clean" directory target.
+eth/bitstamp/clean: eth/bitstamp/CMakeFiles/eth-bitstamp.dir/clean
+.PHONY : eth/bitstamp/clean
+
+#=============================================================================
+# Directory level rules for directory eth/coinbase
+
+# Recursive "all" directory target.
+eth/coinbase/all: eth/coinbase/CMakeFiles/eth-coinbase.dir/all
+.PHONY : eth/coinbase/all
+
+# Recursive "preinstall" directory target.
+eth/coinbase/preinstall:
+.PHONY : eth/coinbase/preinstall
+
+# Recursive "clean" directory target.
+eth/coinbase/clean: eth/coinbase/CMakeFiles/eth-coinbase.dir/clean
+.PHONY : eth/coinbase/clean
+
+#=============================================================================
+# Directory level rules for directory eth/cryptocom
+
+# Recursive "all" directory target.
+eth/cryptocom/all: eth/cryptocom/CMakeFiles/eth-cryptocom.dir/all
+.PHONY : eth/cryptocom/all
+
+# Recursive "preinstall" directory target.
+eth/cryptocom/preinstall:
+.PHONY : eth/cryptocom/preinstall
+
+# Recursive "clean" directory target.
+eth/cryptocom/clean: eth/cryptocom/CMakeFiles/eth-cryptocom.dir/clean
+.PHONY : eth/cryptocom/clean
+
+#=============================================================================
+# Directory level rules for directory eth/gemini
+
+# Recursive "all" directory target.
+eth/gemini/all: eth/gemini/CMakeFiles/eth-gemini.dir/all
+.PHONY : eth/gemini/all
+
+# Recursive "preinstall" directory target.
+eth/gemini/preinstall:
+.PHONY : eth/gemini/preinstall
+
+# Recursive "clean" directory target.
+eth/gemini/clean: eth/gemini/CMakeFiles/eth-gemini.dir/clean
+.PHONY : eth/gemini/clean
+
+#=============================================================================
+# Directory level rules for directory sequential
+
+# Recursive "all" directory target.
+sequential/all: sequential/CMakeFiles/sequential.dir/all
+.PHONY : sequential/all
+
+# Recursive "preinstall" directory target.
+sequential/preinstall:
+.PHONY : sequential/preinstall
+
+# Recursive "clean" directory target.
+sequential/clean: sequential/CMakeFiles/sequential.dir/clean
+.PHONY : sequential/clean
 
 #=============================================================================
 # Target rules for target btc/binance/CMakeFiles/btc-binance.dir
@@ -422,6 +584,240 @@ btc-gemini: btc/gemini/CMakeFiles/btc-gemini.dir/rule
 btc/gemini/CMakeFiles/btc-gemini.dir/clean:
 	$(MAKE) $(MAKESILENT) -f btc/gemini/CMakeFiles/btc-gemini.dir/build.make btc/gemini/CMakeFiles/btc-gemini.dir/clean
 .PHONY : btc/gemini/CMakeFiles/btc-gemini.dir/clean
+
+#=============================================================================
+# Target rules for target eth/binance/CMakeFiles/eth-binance.dir
+
+# All Build rule for target.
+eth/binance/CMakeFiles/eth-binance.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/binance/CMakeFiles/eth-binance.dir/build.make eth/binance/CMakeFiles/eth-binance.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/binance/CMakeFiles/eth-binance.dir/build.make eth/binance/CMakeFiles/eth-binance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=17,18 "Built target eth-binance"
+.PHONY : eth/binance/CMakeFiles/eth-binance.dir/all
+
+# Build rule for subdir invocation for target.
+eth/binance/CMakeFiles/eth-binance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/binance/CMakeFiles/eth-binance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/binance/CMakeFiles/eth-binance.dir/rule
+
+# Convenience name for target.
+eth-binance: eth/binance/CMakeFiles/eth-binance.dir/rule
+.PHONY : eth-binance
+
+# clean rule for target.
+eth/binance/CMakeFiles/eth-binance.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/binance/CMakeFiles/eth-binance.dir/build.make eth/binance/CMakeFiles/eth-binance.dir/clean
+.PHONY : eth/binance/CMakeFiles/eth-binance.dir/clean
+
+#=============================================================================
+# Target rules for target eth/binance-us/CMakeFiles/eth-binance-us.dir
+
+# All Build rule for target.
+eth/binance-us/CMakeFiles/eth-binance-us.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/binance-us/CMakeFiles/eth-binance-us.dir/build.make eth/binance-us/CMakeFiles/eth-binance-us.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/binance-us/CMakeFiles/eth-binance-us.dir/build.make eth/binance-us/CMakeFiles/eth-binance-us.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=19,20 "Built target eth-binance-us"
+.PHONY : eth/binance-us/CMakeFiles/eth-binance-us.dir/all
+
+# Build rule for subdir invocation for target.
+eth/binance-us/CMakeFiles/eth-binance-us.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/binance-us/CMakeFiles/eth-binance-us.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/binance-us/CMakeFiles/eth-binance-us.dir/rule
+
+# Convenience name for target.
+eth-binance-us: eth/binance-us/CMakeFiles/eth-binance-us.dir/rule
+.PHONY : eth-binance-us
+
+# clean rule for target.
+eth/binance-us/CMakeFiles/eth-binance-us.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/binance-us/CMakeFiles/eth-binance-us.dir/build.make eth/binance-us/CMakeFiles/eth-binance-us.dir/clean
+.PHONY : eth/binance-us/CMakeFiles/eth-binance-us.dir/clean
+
+#=============================================================================
+# Target rules for target eth/bitfinex/CMakeFiles/eth-bitfinex.dir
+
+# All Build rule for target.
+eth/bitfinex/CMakeFiles/eth-bitfinex.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/bitfinex/CMakeFiles/eth-bitfinex.dir/build.make eth/bitfinex/CMakeFiles/eth-bitfinex.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/bitfinex/CMakeFiles/eth-bitfinex.dir/build.make eth/bitfinex/CMakeFiles/eth-bitfinex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=21,22 "Built target eth-bitfinex"
+.PHONY : eth/bitfinex/CMakeFiles/eth-bitfinex.dir/all
+
+# Build rule for subdir invocation for target.
+eth/bitfinex/CMakeFiles/eth-bitfinex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/bitfinex/CMakeFiles/eth-bitfinex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/bitfinex/CMakeFiles/eth-bitfinex.dir/rule
+
+# Convenience name for target.
+eth-bitfinex: eth/bitfinex/CMakeFiles/eth-bitfinex.dir/rule
+.PHONY : eth-bitfinex
+
+# clean rule for target.
+eth/bitfinex/CMakeFiles/eth-bitfinex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/bitfinex/CMakeFiles/eth-bitfinex.dir/build.make eth/bitfinex/CMakeFiles/eth-bitfinex.dir/clean
+.PHONY : eth/bitfinex/CMakeFiles/eth-bitfinex.dir/clean
+
+#=============================================================================
+# Target rules for target eth/bitmex/CMakeFiles/eth-bitmex.dir
+
+# All Build rule for target.
+eth/bitmex/CMakeFiles/eth-bitmex.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/bitmex/CMakeFiles/eth-bitmex.dir/build.make eth/bitmex/CMakeFiles/eth-bitmex.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/bitmex/CMakeFiles/eth-bitmex.dir/build.make eth/bitmex/CMakeFiles/eth-bitmex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=23,24 "Built target eth-bitmex"
+.PHONY : eth/bitmex/CMakeFiles/eth-bitmex.dir/all
+
+# Build rule for subdir invocation for target.
+eth/bitmex/CMakeFiles/eth-bitmex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/bitmex/CMakeFiles/eth-bitmex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/bitmex/CMakeFiles/eth-bitmex.dir/rule
+
+# Convenience name for target.
+eth-bitmex: eth/bitmex/CMakeFiles/eth-bitmex.dir/rule
+.PHONY : eth-bitmex
+
+# clean rule for target.
+eth/bitmex/CMakeFiles/eth-bitmex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/bitmex/CMakeFiles/eth-bitmex.dir/build.make eth/bitmex/CMakeFiles/eth-bitmex.dir/clean
+.PHONY : eth/bitmex/CMakeFiles/eth-bitmex.dir/clean
+
+#=============================================================================
+# Target rules for target eth/bitstamp/CMakeFiles/eth-bitstamp.dir
+
+# All Build rule for target.
+eth/bitstamp/CMakeFiles/eth-bitstamp.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/bitstamp/CMakeFiles/eth-bitstamp.dir/build.make eth/bitstamp/CMakeFiles/eth-bitstamp.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/bitstamp/CMakeFiles/eth-bitstamp.dir/build.make eth/bitstamp/CMakeFiles/eth-bitstamp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=25,26 "Built target eth-bitstamp"
+.PHONY : eth/bitstamp/CMakeFiles/eth-bitstamp.dir/all
+
+# Build rule for subdir invocation for target.
+eth/bitstamp/CMakeFiles/eth-bitstamp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/bitstamp/CMakeFiles/eth-bitstamp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/bitstamp/CMakeFiles/eth-bitstamp.dir/rule
+
+# Convenience name for target.
+eth-bitstamp: eth/bitstamp/CMakeFiles/eth-bitstamp.dir/rule
+.PHONY : eth-bitstamp
+
+# clean rule for target.
+eth/bitstamp/CMakeFiles/eth-bitstamp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/bitstamp/CMakeFiles/eth-bitstamp.dir/build.make eth/bitstamp/CMakeFiles/eth-bitstamp.dir/clean
+.PHONY : eth/bitstamp/CMakeFiles/eth-bitstamp.dir/clean
+
+#=============================================================================
+# Target rules for target eth/coinbase/CMakeFiles/eth-coinbase.dir
+
+# All Build rule for target.
+eth/coinbase/CMakeFiles/eth-coinbase.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/coinbase/CMakeFiles/eth-coinbase.dir/build.make eth/coinbase/CMakeFiles/eth-coinbase.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/coinbase/CMakeFiles/eth-coinbase.dir/build.make eth/coinbase/CMakeFiles/eth-coinbase.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=27,28 "Built target eth-coinbase"
+.PHONY : eth/coinbase/CMakeFiles/eth-coinbase.dir/all
+
+# Build rule for subdir invocation for target.
+eth/coinbase/CMakeFiles/eth-coinbase.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/coinbase/CMakeFiles/eth-coinbase.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/coinbase/CMakeFiles/eth-coinbase.dir/rule
+
+# Convenience name for target.
+eth-coinbase: eth/coinbase/CMakeFiles/eth-coinbase.dir/rule
+.PHONY : eth-coinbase
+
+# clean rule for target.
+eth/coinbase/CMakeFiles/eth-coinbase.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/coinbase/CMakeFiles/eth-coinbase.dir/build.make eth/coinbase/CMakeFiles/eth-coinbase.dir/clean
+.PHONY : eth/coinbase/CMakeFiles/eth-coinbase.dir/clean
+
+#=============================================================================
+# Target rules for target eth/cryptocom/CMakeFiles/eth-cryptocom.dir
+
+# All Build rule for target.
+eth/cryptocom/CMakeFiles/eth-cryptocom.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/cryptocom/CMakeFiles/eth-cryptocom.dir/build.make eth/cryptocom/CMakeFiles/eth-cryptocom.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/cryptocom/CMakeFiles/eth-cryptocom.dir/build.make eth/cryptocom/CMakeFiles/eth-cryptocom.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=29,30 "Built target eth-cryptocom"
+.PHONY : eth/cryptocom/CMakeFiles/eth-cryptocom.dir/all
+
+# Build rule for subdir invocation for target.
+eth/cryptocom/CMakeFiles/eth-cryptocom.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/cryptocom/CMakeFiles/eth-cryptocom.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/cryptocom/CMakeFiles/eth-cryptocom.dir/rule
+
+# Convenience name for target.
+eth-cryptocom: eth/cryptocom/CMakeFiles/eth-cryptocom.dir/rule
+.PHONY : eth-cryptocom
+
+# clean rule for target.
+eth/cryptocom/CMakeFiles/eth-cryptocom.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/cryptocom/CMakeFiles/eth-cryptocom.dir/build.make eth/cryptocom/CMakeFiles/eth-cryptocom.dir/clean
+.PHONY : eth/cryptocom/CMakeFiles/eth-cryptocom.dir/clean
+
+#=============================================================================
+# Target rules for target eth/gemini/CMakeFiles/eth-gemini.dir
+
+# All Build rule for target.
+eth/gemini/CMakeFiles/eth-gemini.dir/all:
+	$(MAKE) $(MAKESILENT) -f eth/gemini/CMakeFiles/eth-gemini.dir/build.make eth/gemini/CMakeFiles/eth-gemini.dir/depend
+	$(MAKE) $(MAKESILENT) -f eth/gemini/CMakeFiles/eth-gemini.dir/build.make eth/gemini/CMakeFiles/eth-gemini.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=31,32 "Built target eth-gemini"
+.PHONY : eth/gemini/CMakeFiles/eth-gemini.dir/all
+
+# Build rule for subdir invocation for target.
+eth/gemini/CMakeFiles/eth-gemini.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth/gemini/CMakeFiles/eth-gemini.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : eth/gemini/CMakeFiles/eth-gemini.dir/rule
+
+# Convenience name for target.
+eth-gemini: eth/gemini/CMakeFiles/eth-gemini.dir/rule
+.PHONY : eth-gemini
+
+# clean rule for target.
+eth/gemini/CMakeFiles/eth-gemini.dir/clean:
+	$(MAKE) $(MAKESILENT) -f eth/gemini/CMakeFiles/eth-gemini.dir/build.make eth/gemini/CMakeFiles/eth-gemini.dir/clean
+.PHONY : eth/gemini/CMakeFiles/eth-gemini.dir/clean
+
+#=============================================================================
+# Target rules for target sequential/CMakeFiles/sequential.dir
+
+# All Build rule for target.
+sequential/CMakeFiles/sequential.dir/all:
+	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/depend
+	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=33,34 "Built target sequential"
+.PHONY : sequential/CMakeFiles/sequential.dir/all
+
+# Build rule for subdir invocation for target.
+sequential/CMakeFiles/sequential.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sequential/CMakeFiles/sequential.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : sequential/CMakeFiles/sequential.dir/rule
+
+# Convenience name for target.
+sequential: sequential/CMakeFiles/sequential.dir/rule
+.PHONY : sequential
+
+# clean rule for target.
+sequential/CMakeFiles/sequential.dir/clean:
+	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/clean
+.PHONY : sequential/CMakeFiles/sequential.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

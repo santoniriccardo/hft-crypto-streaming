@@ -316,6 +316,96 @@ coinbase-btc_IS_TOP_LEVEL:STATIC=OFF
 coinbase-btc_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/coinbase-btc
 
 //Value Computed by CMake
+eth-binance-us_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance-us
+
+//Value Computed by CMake
+eth-binance-us_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-binance-us_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance-us
+
+//Value Computed by CMake
+eth-binance_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance
+
+//Value Computed by CMake
+eth-binance_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-binance_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance
+
+//Value Computed by CMake
+eth-bitfinex_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitfinex
+
+//Value Computed by CMake
+eth-bitfinex_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-bitfinex_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitfinex
+
+//Value Computed by CMake
+eth-bitmex_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitmex
+
+//Value Computed by CMake
+eth-bitmex_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-bitmex_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitmex
+
+//Value Computed by CMake
+eth-bitstamp_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitstamp
+
+//Value Computed by CMake
+eth-bitstamp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-bitstamp_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitstamp
+
+//Value Computed by CMake
+eth-coinbase_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/coinbase
+
+//Value Computed by CMake
+eth-coinbase_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-coinbase_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/coinbase
+
+//Value Computed by CMake
+eth-cryptocom_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/cryptocom
+
+//Value Computed by CMake
+eth-cryptocom_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-cryptocom_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/cryptocom
+
+//Value Computed by CMake
+eth-gemini_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/gemini
+
+//Value Computed by CMake
+eth-gemini_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eth-gemini_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/gemini
+
+//Value Computed by CMake
+eths-binance_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance
+
+//Value Computed by CMake
+eths-binance_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+eths-binance_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance
+
+//Value Computed by CMake
+sequential_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential
+
+//Value Computed by CMake
+sequential_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+sequential_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential
+
+//Value Computed by CMake
 streaming_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming
 
 //Value Computed by CMake
@@ -423,7 +513,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

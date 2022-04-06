@@ -51,3 +51,6 @@
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/CMakeFiles/sequential.dir
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/CMakeFiles/edit_cache.dir
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/CMakeFiles/rebuild_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/parallel/CMakeFiles/parallel.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/parallel/CMakeFiles/edit_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/parallel/CMakeFiles/rebuild_cache.dir

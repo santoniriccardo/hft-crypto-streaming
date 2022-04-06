@@ -397,6 +397,15 @@ eths-binance_IS_TOP_LEVEL:STATIC=OFF
 eths-binance_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance
 
 //Value Computed by CMake
+parallel_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/parallel
+
+//Value Computed by CMake
+parallel_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+parallel_SOURCE_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/parallel
+
+//Value Computed by CMake
 sequential_BINARY_DIR:STATIC=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential
 
 //Value Computed by CMake
@@ -513,7 +522,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

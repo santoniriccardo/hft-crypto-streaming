@@ -337,6 +337,19 @@ sequential/fast:
 	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/build
 .PHONY : sequential/fast
 
+#=============================================================================
+# Target rules for targets named parallel
+
+# Build rule for target.
+parallel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parallel
+.PHONY : parallel
+
+# fast build rule for target.
+parallel/fast:
+	$(MAKE) $(MAKESILENT) -f parallel/CMakeFiles/parallel.dir/build.make parallel/CMakeFiles/parallel.dir/build
+.PHONY : parallel/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -361,6 +374,7 @@ help:
 	@echo "... eth-coinbase"
 	@echo "... eth-cryptocom"
 	@echo "... eth-gemini"
+	@echo "... parallel"
 	@echo "... sequential"
 .PHONY : help
 

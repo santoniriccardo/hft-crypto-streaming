@@ -80,6 +80,7 @@ all: eth/coinbase/all
 all: eth/cryptocom/all
 all: eth/gemini/all
 all: sequential/all
+all: parallel/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -100,6 +101,7 @@ preinstall: eth/coinbase/preinstall
 preinstall: eth/cryptocom/preinstall
 preinstall: eth/gemini/preinstall
 preinstall: sequential/preinstall
+preinstall: parallel/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -120,6 +122,7 @@ clean: eth/coinbase/clean
 clean: eth/cryptocom/clean
 clean: eth/gemini/clean
 clean: sequential/clean
+clean: parallel/clean
 .PHONY : clean
 
 #=============================================================================
@@ -361,6 +364,21 @@ eth/gemini/preinstall:
 # Recursive "clean" directory target.
 eth/gemini/clean: eth/gemini/CMakeFiles/eth-gemini.dir/clean
 .PHONY : eth/gemini/clean
+
+#=============================================================================
+# Directory level rules for directory parallel
+
+# Recursive "all" directory target.
+parallel/all: parallel/CMakeFiles/parallel.dir/all
+.PHONY : parallel/all
+
+# Recursive "preinstall" directory target.
+parallel/preinstall:
+.PHONY : parallel/preinstall
+
+# Recursive "clean" directory target.
+parallel/clean: parallel/CMakeFiles/parallel.dir/clean
+.PHONY : parallel/clean
 
 #=============================================================================
 # Directory level rules for directory sequential
@@ -800,7 +818,7 @@ eth/gemini/CMakeFiles/eth-gemini.dir/clean:
 sequential/CMakeFiles/sequential.dir/all:
 	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/depend
 	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=33,34 "Built target sequential"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=35,36 "Built target sequential"
 .PHONY : sequential/CMakeFiles/sequential.dir/all
 
 # Build rule for subdir invocation for target.
@@ -818,6 +836,32 @@ sequential: sequential/CMakeFiles/sequential.dir/rule
 sequential/CMakeFiles/sequential.dir/clean:
 	$(MAKE) $(MAKESILENT) -f sequential/CMakeFiles/sequential.dir/build.make sequential/CMakeFiles/sequential.dir/clean
 .PHONY : sequential/CMakeFiles/sequential.dir/clean
+
+#=============================================================================
+# Target rules for target parallel/CMakeFiles/parallel.dir
+
+# All Build rule for target.
+parallel/CMakeFiles/parallel.dir/all:
+	$(MAKE) $(MAKESILENT) -f parallel/CMakeFiles/parallel.dir/build.make parallel/CMakeFiles/parallel.dir/depend
+	$(MAKE) $(MAKESILENT) -f parallel/CMakeFiles/parallel.dir/build.make parallel/CMakeFiles/parallel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles --progress-num=33,34 "Built target parallel"
+.PHONY : parallel/CMakeFiles/parallel.dir/all
+
+# Build rule for subdir invocation for target.
+parallel/CMakeFiles/parallel.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parallel/CMakeFiles/parallel.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles 0
+.PHONY : parallel/CMakeFiles/parallel.dir/rule
+
+# Convenience name for target.
+parallel: parallel/CMakeFiles/parallel.dir/rule
+.PHONY : parallel
+
+# clean rule for target.
+parallel/CMakeFiles/parallel.dir/clean:
+	$(MAKE) $(MAKESILENT) -f parallel/CMakeFiles/parallel.dir/build.make parallel/CMakeFiles/parallel.dir/clean
+.PHONY : parallel/CMakeFiles/parallel.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -44,3 +44,4 @@ add_subdirectory(eth/cryptocom)
 add_subdirectory(eth/gemini)
 
 add_subdirectory(sequential)
+add_subdirectory(parallel)

@@ -27,6 +27,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "eth/coinbase/CMakeLists.txt"
   "eth/cryptocom/CMakeLists.txt"
   "eth/gemini/CMakeLists.txt"
+  "parallel/CMakeLists.txt"
   "sequential/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.22.3/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -81,6 +82,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "eth/cryptocom/CMakeFiles/CMakeDirectoryInformation.cmake"
   "eth/gemini/CMakeFiles/CMakeDirectoryInformation.cmake"
   "sequential/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "parallel/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -102,4 +104,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "eth/cryptocom/CMakeFiles/eth-cryptocom.dir/DependInfo.cmake"
   "eth/gemini/CMakeFiles/eth-gemini.dir/DependInfo.cmake"
   "sequential/CMakeFiles/sequential.dir/DependInfo.cmake"
+  "parallel/CMakeFiles/parallel.dir/DependInfo.cmake"
   )

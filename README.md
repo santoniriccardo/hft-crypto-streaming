@@ -63,3 +63,21 @@ Continue working on parallelism of streaming of asset information from various e
 
 ### Week 5
 Either continue working on unfinished tasks from weeks 3/4, or extend to stream information from more exchanges + asset classes. Work on valuation model more.
+
+
+## Milestone
+
+### Work Completed
+So far, we have completed a majority of the parallel streaming of asset information work, past the 125% mark we were looking to achieve. We have setup our parallel streaming infrastructure to currently stream 2 assets from 8 different exchanges. This has lent itself to to a parallel model utilizing 16 cores, each streaming an exchange asset pair. Not only that, but we are in a position to scale the number of exchanges and cryptocurrencies to ~20 and >50 respectively. This new goal is feasible given our infstracture, and will help scale the problem size so that we can see larger advantages from parallelism.
+Further, we have been working on our initial valuation model, working with a volume weighted average price model. This is computed within each exchange + cryptocurrency pair, and is then aggregated by another thread to provide an consistent internal oracle of the current price of the curreny. This is similar to the Pyth network, alowing us to coalesce market data from a number of exchanges into one internal view. There are still some parallel aspects in this regard that we aim to solve, such as the synchronization and passing of information from the streaming cores to the compute cores. Further, we aim to increase the computation required for the valuation/aggregation models in order to further scale the problem size.
+
+### Deliverables
+
+We are confident in being able to produce all of our deliverables, and if anything, we believe to exceed the problem/solution size originally anticipated, as mentioned above.
+
+### Poster Session
+
+We plan to show the architecture of our solution, both the streaming aspect and message passing/aggregation of the various valuation models. We will also showcase any parallelism required within the valuation/aggregation model itself. We aim to show graphs of the relative speedup and increase in throughput by parallelizing along the various exchanges/cryptocurrencies. 
+
+### Concerns
+We have no major concerns at this point in time. One concern that we discussed with Professor Beckmann was the problem size and actual need for parallization. However, given the work we have conducted so far we are confident in surpassing this for a number of reasons. For one, we are at a good spot to scale up the problem size by a signficant amount in terms of the number of exchanges and assets we will compute on. Further, we have defined various extensions to the valuation model in order for it to perform more computation.

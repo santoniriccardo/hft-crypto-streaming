@@ -47,29 +47,24 @@ Overall, we aim to experiment with a number of different parallelization approac
 ## Platform Choice
 We believe c++ or go will be the most effective, in combination with our platform with a large number of CPUs seeing as we aim to heavily utilize independent cores for their own respective computations. Further, lots of these operations will be io intensive such as streaming information, and will therefore be less suited to a GPU architecture for example.
 
-## Schedule
-
-### Week 1
-Connect to first exchange. Stream asset information for one or more assets.
-
-### Week 2
-Finish connections for at least 5 exchanges. Stream asset information for one or more assets from each
+## Updated Schedule
 
 ### Week 3
-Experiment and solidify parallelism approaches for various exchange + asset pairs. Introduce basic valuation model that these each feed into.
+Continue improving valuation model computational cost. Further solidify message passing appraoch between streaming nodes and computation nodes.
 
 ### Week 4
-Continue working on parallelism of streaming of asset information from various exchanges. Enhance valuation model and parallelism in this computation, as well as the actual message passing amongst cores.
+Scale the problem size on a number of axis', from number of exchanges, to number of assets, to market depth, to valuation model computational cost. Continue to do so until we can show a significant relative speedup/sustained throughput
 
 ### Week 5
-Either continue working on unfinished tasks from weeks 3/4, or extend to stream information from more exchanges + asset classes. Work on valuation model more.
+Continue previous efforts, and create various plots and graphs to show the achieved speedup/throughput gains. Experiment with other parallelization approaches such as per exchange streaming cores versus exchange/asset pairs.
 
 
 ## Milestone
 
 ### Work Completed
-So far, we have completed a majority of the parallel streaming of asset information work, past the 125% mark we were looking to achieve. We have setup our parallel streaming infrastructure to currently stream 2 assets from 8 different exchanges. This has lent itself to to a parallel model utilizing 16 cores, each streaming an exchange asset pair. Not only that, but we are in a position to scale the number of exchanges and cryptocurrencies to ~20 and >50 respectively. This new goal is feasible given our infstracture, and will help scale the problem size so that we can see larger advantages from parallelism.
-Further, we have been working on our initial valuation model, working with a volume weighted average price model. This is computed within each exchange + cryptocurrency pair, and is then aggregated by another thread to provide an consistent internal oracle of the current price of the curreny. This is similar to the Pyth network, alowing us to coalesce market data from a number of exchanges into one internal view. There are still some parallel aspects in this regard that we aim to solve, such as the synchronization and passing of information from the streaming cores to the compute cores. Further, we aim to increase the computation required for the valuation/aggregation models in order to further scale the problem size.
+So far, we have completed a majority of the parallel streaming of asset information work, past the 125% mark we were looking to achieve. We have setup our parallel streaming infrastructure to currently stream 2 assets from 8 different exchanges. This has lent itself to to a parallel model utilizing 16 cores, each streaming an exchange asset pair. Not only that, but we are in a position to scale the number of exchanges and cryptocurrencies to ~20 and >50 respectively. Even further, we can scale the level of market data depth we consume, giving us a more accurate view of the market, but also more data to compute on. This new goal is feasible given our infstracture, and will help scale the problem size so that we can see larger advantages from parallelism. We also did some experimentation work with the actual throughput from each exchange/asset pair, and found the average throughput of market data updates was one update every 3.125 ms. As we continue to scale the problem size to the aforementioned ~20 exchanges and >50 assets, this could push our theoretical required throughput to 3.125 microseconds. We will need to ensure that the sequential implementation and respective valuation model cost is not able to support this sustained throughput, in order to show the benefits of parallelism and overall success of the project.
+
+Further, we have been working on our initial valuation model, beginning with a volume weighted average price model. This is computed within each exchange + cryptocurrency pair, and is then aggregated by another thread to provide an consistent internal oracle of the current price of the curreny. This is similar to the Pyth network, alowing us to coalesce market data from a number of exchanges into one internal view. There are still some parallel aspects in this regard that we aim to solve, such as the synchronization and passing of information from the streaming cores to the compute cores. Further, we aim to increase the computation required for the valuation/aggregation models in order to further scale the problem size.
 
 ### Deliverables
 

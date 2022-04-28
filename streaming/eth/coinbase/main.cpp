@@ -11,11 +11,33 @@ class MyEventHandler : public EventHandler {
         for (const auto& element : message.getElementList()) {
           const std::map<std::string, std::string>& elementNameValueMap = element.getNameValueMap();
           std::cout << "  " + toString(elementNameValueMap) << std::endl;
+
+          if (element.has("BID_PRICE")) {
+            bestBidPrice = std::stod(element.getValue("BID_PRICE"));
+          }
+          
+          if (element.has("BID_SIZE")) {
+            bestBidSize = std::stod(element.getValue("BID_SIZE"));
+          }
+
+          if (element.has("ASK_PRICE")) {
+            bestAskPrice = std::stod(element.getValue("ASK_PRICE"));
+          }
+
+          if (element.has("ASK_SIZE")) {
+            bestAskSize = std::stod(element.getValue("ASK_SIZE"));
+          }
         }
-      }
+        double midpoint = ((bestBidPrice * bestAskSize) + (bestAskPrice * bestBidSize)) / (bestBidSize + bestAskSize);
+        std::cout << "Current Midpoint Valuation: " << midpoint << std::endl;
+      } 
     }
     return true;
   }
+  double bestBidPrice;
+  double bestBidSize;
+  double bestAskPrice;
+  double bestAskSize;
 };
 } /* namespace ccapi */
 using ::ccapi::MyEventHandler;
@@ -30,9 +52,9 @@ int main(int argc, char** argv) {
   MyEventHandler eventHandler;
   Session session(sessionOptions, sessionConfigs, &eventHandler);
   std::vector<Subscription> subscriptionList;
-  subscriptionList.emplace_back("coinbase", "ETH-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=10", "c");
+  subscriptionList.emplace_back("coinbase", "ETH-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=1", "c");
   session.subscribe(subscriptionList);
-  std::this_thread::sleep_for(std::chrono::seconds(100));
+  std::this_thread::sleep_for(std::chrono::seconds(2));
   session.stop();
   std::cout << "Bye" << std::endl;
   return EXIT_SUCCESS;

@@ -1,9 +1,13 @@
 #include "ccapi_cpp/ccapi_session.h"
+#include "valuation_engine.h"
+#include "market_data_parser.h"
 
 namespace ccapi {
 Logger* Logger::logger = nullptr;  // This line is needed.
-class MyEventHandler : public EventHandler {
+class SeqEventHandler : public EventHandler {
  public:
+    SeqEventHandler(MarketDataParser marketDataParser, ValuationEngine valuationEngine) : marketDataParser(marketDataParser), valuationEngine(valuationEngine) {}
+
   bool processEvent(const Event& event, Session* session) override {
     if (event.getType() == Event::Type::SUBSCRIPTION_DATA) {
       for (const auto& message : event.getMessageList()) {
@@ -16,6 +20,10 @@ class MyEventHandler : public EventHandler {
     }
     return true;
   }
+
+  private:
+    MarketDataParser marketDataParser;
+    ValuationEngine valuationEngine;
 };
 } /* namespace ccapi */
 using ::ccapi::MyEventHandler;
@@ -27,7 +35,12 @@ using ::ccapi::toString;
 int main(int argc, char** argv) {
   SessionOptions sessionOptions;
   SessionConfigs sessionConfigs;
-  MyEventHandler eventHandler;
+
+  // Instantiate necessary market data parser/valuation engine.
+  MarketDataParser marketDataParser;
+  ValuationEngine valuationEngine;
+
+  SeqEventHandler eventHandler(marketDataParser, valuationEngine);
   Session session(sessionOptions, sessionConfigs, &eventHandler);
   std::vector<Subscription> subscriptionList;
   subscriptionList.emplace_back("binance", "BTCUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b");

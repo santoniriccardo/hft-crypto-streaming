@@ -39,92 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/binance/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/binance-us/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitfinex/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitmex/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/bitstamp/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/coinbase/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/cryptocom/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/btc/gemini/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance-us/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitfinex/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitmex/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/bitstamp/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/coinbase/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/cryptocom/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/gemini/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/parallel/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/valuation/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

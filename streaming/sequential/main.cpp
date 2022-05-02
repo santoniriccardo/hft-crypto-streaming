@@ -4,29 +4,39 @@
 
 namespace ccapi {
 Logger* Logger::logger = nullptr;  // This line is needed.
-class SeqEventHandler : public EventHandler {
+class SequentialEventHandler : public EventHandler {
  public:
-    SeqEventHandler(MarketDataParser marketDataParser, ValuationEngine valuationEngine) : marketDataParser(marketDataParser), valuationEngine(valuationEngine) {}
+    SequentialEventHandler(MarketDataParser marketDataParser, ValuationEngine valuationEngine) : marketDataParser(marketDataParser), valuationEngine(valuationEngine), count(0) {}
 
   bool processEvent(const Event& event, Session* session) override {
     if (event.getType() == Event::Type::SUBSCRIPTION_DATA) {
       for (const auto& message : event.getMessageList()) {
-        std::cout << std::string("Best bid and ask at ") + UtilTime::getISOTimestamp(message.getTime()) + " are:" << std::endl;
-        for (const auto& element : message.getElementList()) {
-          const std::map<std::string, std::string>& elementNameValueMap = element.getNameValueMap();
-          std::cout << "  " + toString(elementNameValueMap) << std::endl;
-        }
+        // std::cout << std::string("Best bid and ask at ") + UtilTime::getISOTimestamp(message.getTime()) + " are:" << std::endl;
+        // for (const auto& element : message.getElementList()) {
+        //   const std::map<std::string, std::string>& elementNameValueMap = element.getNameValueMap();
+        //   std::cout << "  " + toString(elementNameValueMap) << std::endl;
+        // }
+
+        std::vector<Order> bids;
+        std::vector<Order> asks;
+
+        marketDataParser.parse(message, bids, asks);
+
+        double valuation = valuationEngine.priceAsset(bids, asks);
+        // std::cout << "Valuation: " << valuation << std::endl;
+        count++;
       }
     }
     return true;
   }
+    int count;
 
   private:
     MarketDataParser marketDataParser;
     ValuationEngine valuationEngine;
 };
 } /* namespace ccapi */
-using ::ccapi::MyEventHandler;
+using ::ccapi::SequentialEventHandler;
 using ::ccapi::Session;
 using ::ccapi::SessionConfigs;
 using ::ccapi::SessionOptions;
@@ -40,7 +50,7 @@ int main(int argc, char** argv) {
   MarketDataParser marketDataParser;
   ValuationEngine valuationEngine;
 
-  SeqEventHandler eventHandler(marketDataParser, valuationEngine);
+  SequentialEventHandler eventHandler(marketDataParser, valuationEngine);
   Session session(sessionOptions, sessionConfigs, &eventHandler);
   std::vector<Subscription> subscriptionList;
   subscriptionList.emplace_back("binance", "BTCUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b");
@@ -63,8 +73,9 @@ int main(int argc, char** argv) {
 
 
   session.subscribe(subscriptionList);
-  std::this_thread::sleep_for(std::chrono::seconds(100));
+  std::this_thread::sleep_for(std::chrono::seconds(10));
   session.stop();
-  std::cout << "Bye" << std::endl;
+  
+  std::cout << "Throughput: " << eventHandler.count << " market data events" << std::endl;
   return EXIT_SUCCESS;
 }

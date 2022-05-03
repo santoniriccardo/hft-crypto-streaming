@@ -39,6 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/cmake_install.cmake")
 endif()
 

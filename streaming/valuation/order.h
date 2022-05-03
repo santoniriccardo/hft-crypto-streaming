@@ -15,9 +15,9 @@ class Order {
 	InternalOrderType type() const { return orderType; }
 
 	private:
-	const double price;
+	double price;
 	double volume;
-	const InternalOrderType orderType;
+	InternalOrderType orderType;
 };
 
 #endif  // INTERNAL_ORDER_H_

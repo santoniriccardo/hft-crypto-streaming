@@ -1,5 +1,8 @@
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles/edit_cache.dir
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/CMakeFiles/rebuild_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance/CMakeFiles/eth-binance.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance/CMakeFiles/edit_cache.dir
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/eth/binance/CMakeFiles/rebuild_cache.dir
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/CMakeFiles/sequential.dir
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/CMakeFiles/edit_cache.dir
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/sequential/CMakeFiles/rebuild_cache.dir

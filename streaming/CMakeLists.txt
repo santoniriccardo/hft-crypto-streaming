@@ -34,7 +34,7 @@ link_libraries(OpenSSL::Crypto OpenSSL::SSL ${ADDITIONAL_LINK_LIBRARIES})
 # add_subdirectory(btc/cryptocom)
 # add_subdirectory(btc/gemini)
 
-# add_subdirectory(eth/binance)
+add_subdirectory(eth/binance)
 # add_subdirectory(eth/binance-us)
 # add_subdirectory(eth/bitfinex)
 # add_subdirectory(eth/bitmex)

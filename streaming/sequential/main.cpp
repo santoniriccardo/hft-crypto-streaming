@@ -11,11 +11,6 @@ class SequentialEventHandler : public EventHandler {
   bool processEvent(const Event& event, Session* session) override {
     if (event.getType() == Event::Type::SUBSCRIPTION_DATA) {
       for (const auto& message : event.getMessageList()) {
-        // std::cout << std::string("Best bid and ask at ") + UtilTime::getISOTimestamp(message.getTime()) + " are:" << std::endl;
-        // for (const auto& element : message.getElementList()) {
-        //   const std::map<std::string, std::string>& elementNameValueMap = element.getNameValueMap();
-        //   std::cout << "  " + toString(elementNameValueMap) << std::endl;
-        // }
 
         std::vector<Order> bids;
         std::vector<Order> asks;
@@ -53,6 +48,8 @@ int main(int argc, char** argv) {
   SequentialEventHandler eventHandler(marketDataParser, valuationEngine);
   Session session(sessionOptions, sessionConfigs, &eventHandler);
   std::vector<Subscription> subscriptionList;
+
+  // BTC Subscriptions
   subscriptionList.emplace_back("binance", "BTCUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b");
   subscriptionList.emplace_back("binance-us", "BTCUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-us");
   subscriptionList.emplace_back("bitfinex", "tBTCUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bf");
@@ -62,6 +59,7 @@ int main(int argc, char** argv) {
   subscriptionList.emplace_back("cryptocom", "BTC_USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "cc");
   subscriptionList.emplace_back("gemini", "btcusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "g");
 
+  // ETH Subscriptions
   subscriptionList.emplace_back("binance", "ETHUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-eth");
   subscriptionList.emplace_back("binance-us", "ETHUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-us-eth");
   subscriptionList.emplace_back("bitfinex", "tETHUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bf-eth");
@@ -70,6 +68,36 @@ int main(int argc, char** argv) {
   subscriptionList.emplace_back("coinbase", "ETH-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "c-eth");
   subscriptionList.emplace_back("cryptocom", "ETH_USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "cc-eth");
   subscriptionList.emplace_back("gemini", "ethusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "g-eth");
+  
+  // LINK Subscriptions
+  subscriptionList.emplace_back("binance", "LINKUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-link");
+  subscriptionList.emplace_back("binance-us", "LINKUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-us-link");
+  subscriptionList.emplace_back("bitfinex", "tLINKUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bf-link");
+  subscriptionList.emplace_back("bitmex", "LINKUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bm-link");
+  subscriptionList.emplace_back("bitstamp", "linkusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bs-link");
+  subscriptionList.emplace_back("coinbase", "LINK-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "c-link");
+  subscriptionList.emplace_back("cryptocom", "LINK_USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "cc-link");
+  subscriptionList.emplace_back("gemini", "linkusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "g-link");
+  
+  // SOL Subscriptions
+  subscriptionList.emplace_back("binance", "SOLUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-sol");
+  subscriptionList.emplace_back("binance-us", "SOLUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-us-sol");
+  subscriptionList.emplace_back("bitfinex", "tSOLUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bf-sol");
+  subscriptionList.emplace_back("bitmex", "SOLUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bm-sol");
+  subscriptionList.emplace_back("bitstamp", "solusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bs-sol");
+  subscriptionList.emplace_back("coinbase", "SOL-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "c-sol");
+  subscriptionList.emplace_back("cryptocom", "SOL_USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "cc-sol");
+  subscriptionList.emplace_back("gemini", "solusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "g-sol");
+  
+  // XRP Subscriptions
+  subscriptionList.emplace_back("binance", "XRPUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-xrp");
+  subscriptionList.emplace_back("binance-us", "XRPUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "b-us-xrp");
+  subscriptionList.emplace_back("bitfinex", "tXRPUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bf-xrp");
+  subscriptionList.emplace_back("bitmex", "XRPUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bm-xrp");
+  subscriptionList.emplace_back("bitstamp", "xrpusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "bs-xrp");
+  subscriptionList.emplace_back("coinbase", "XRP-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "c-xrp");
+  subscriptionList.emplace_back("cryptocom", "XRP_USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "cc-xrp");
+  subscriptionList.emplace_back("gemini", "xrpusd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=100", "g-xrp");
 
 
   session.subscribe(subscriptionList);

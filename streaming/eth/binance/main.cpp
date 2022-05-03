@@ -19,6 +19,7 @@ class MyEventHandler : public EventHandler {
 };
 } /* namespace ccapi */
 using ::ccapi::MyEventHandler;
+using ::ccapi::EventDispatcher;
 using ::ccapi::Session;
 using ::ccapi::SessionConfigs;
 using ::ccapi::SessionOptions;
@@ -28,11 +29,11 @@ int main(int argc, char** argv) {
   SessionOptions sessionOptions;
   SessionConfigs sessionConfigs;
   MyEventHandler eventHandler;
-  Session session(sessionOptions, sessionConfigs, &eventHandler);
-  std::vector<Subscription> subscriptionList;
+  EventDispatcher eventDispatcher(2);
+  Session session(sessionOptions, sessionConfigs, &eventHandler, &eventDispatcher);  std::vector<Subscription> subscriptionList;
   subscriptionList.emplace_back("binance", "ETHUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=10", "b");
   session.subscribe(subscriptionList);
-  std::this_thread::sleep_for(std::chrono::seconds(100));
+  std::this_thread::sleep_for(std::chrono::seconds(10));
   session.stop();
   std::cout << "Bye" << std::endl;
   return EXIT_SUCCESS;

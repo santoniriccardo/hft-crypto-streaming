@@ -13,6 +13,7 @@
 #include <utility>
 #include <vector>
 
+using ::ccapi::toString;
 class ValuationEngine {
     public:
     
@@ -55,7 +56,7 @@ class ValuationEngine {
                 while (curVolume < incVolume) {
                 double remaining = incVolume - curVolume;
 
-                Order bestOrder = orders.front();
+                Order& bestOrder = orders.front();
 
                 double matchedVolume = std::min(remaining, bestOrder.getVolume());
                 

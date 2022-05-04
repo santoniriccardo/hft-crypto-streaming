@@ -1812,7 +1812,14 @@ sequential/CMakeFiles/sequential.dir/main.cpp.o
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance_us.h
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance_base.h
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_erisx.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_kucoin.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_kucoin_base.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx_base.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx_us.h
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_cryptocom.h
+ /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ascendex.h
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/ccapi_event_dispatcher.h
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/ccapi_event_handler.h
  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/streaming/valuation/valuation_engine.h

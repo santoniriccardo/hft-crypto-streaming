@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named eth-binance
-
-# Build rule for target.
-eth-binance: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eth-binance
-.PHONY : eth-binance
-
-# fast build rule for target.
-eth-binance/fast:
-	$(MAKE) $(MAKESILENT) -f eth/binance/CMakeFiles/eth-binance.dir/build.make eth/binance/CMakeFiles/eth-binance.dir/build
-.PHONY : eth-binance/fast
-
-#=============================================================================
 # Target rules for targets named sequential
 
 # Build rule for target.
@@ -163,7 +150,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... eth-binance"
 	@echo "... parallel"
 	@echo "... sequential"
 .PHONY : help

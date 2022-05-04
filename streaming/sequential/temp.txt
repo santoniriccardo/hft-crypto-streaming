@@ -1,0 +1,14 @@
+  // ADA Subscriptions
+  subscriptionList.emplace_back("binance", "ADAUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "b-ada");
+  subscriptionList.emplace_back("binance-us", "ADAUSDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "b-us-ada");
+  subscriptionList.emplace_back("bitfinex", "tADAUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "bf-ada");
+  subscriptionList.emplace_back("bitmex", "ADAUSD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "bm-ada");
+  subscriptionList.emplace_back("bitstamp", "adausd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "bs-ada");
+  subscriptionList.emplace_back("coinbase", "ADA-USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "c-ada");
+  subscriptionList.emplace_back("cryptocom", "ADA_USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "cc-ada");
+  subscriptionList.emplace_back("gemini", "adausd", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "g-ada");
+  subscriptionList.emplace_back("erisx", "ADA/USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "e-ada");
+  subscriptionList.emplace_back("ftx", "ADA/USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "f-ada");
+  subscriptionList.emplace_back("ftx-us", "ADA/USD", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "f-us-ada");
+  subscriptionList.emplace_back("kucoin", "ADA-USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "ku-ada");
+  subscriptionList.emplace_back("ascendex", "ADA/USDT", "MARKET_DEPTH", "MARKET_DEPTH_MAX=20", "a-ada");

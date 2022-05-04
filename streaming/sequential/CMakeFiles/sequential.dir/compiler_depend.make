@@ -1811,7 +1811,14 @@ sequential/CMakeFiles/sequential.dir/main.cpp.o: sequential/main.cpp \
   /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance_us.h \
   /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance_base.h \
   /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_erisx.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_kucoin.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_kucoin_base.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx_base.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx_us.h \
   /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_cryptocom.h \
+  /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ascendex.h \
   /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/ccapi_event_dispatcher.h \
   /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/ccapi_event_handler.h \
   valuation/valuation_engine.h \
@@ -1825,6 +1832,12 @@ valuation/order.h:
 valuation/valuation_engine.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_cryptocom.h:
+
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx_us.h:
+
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx_base.h:
+
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_kucoin.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_binance_base.h:
 
@@ -1951,6 +1964,8 @@ valuation/valuation_engine.h:
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/predef/os/bsd/open.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/predef/os/bsd/free.h:
+
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ftx.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/predef/detail/os_detected.h:
 
@@ -2453,6 +2468,8 @@ valuation/valuation_engine.h:
 /usr/local/opt/openssl/include/openssl/conf.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/asio/ssl/detail/openssl_types.hpp:
+
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_ascendex.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/asio/ssl/context_base.hpp:
 
@@ -3250,6 +3267,8 @@ valuation/valuation_engine.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/mpl/and.hpp:
 
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_kucoin_base.h:
+
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/mpl/aux_/nested_type_wknd.hpp:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
@@ -3703,6 +3722,8 @@ valuation/valuation_engine.h:
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/preprocessor/control/detail/while.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_uintptr_t.h:
+
+/Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/include/ccapi_cpp/service/ccapi_market_data_service_erisx.h:
 
 /Users/riccardosantoni/Documents/CMU/15418/hft-crypto-streaming/ccapi/dependency/boost/boost/asio/detail/date_time_fwd.hpp:
 

@@ -11,7 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.3/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "eth/binance/CMakeLists.txt"
   "parallel/CMakeLists.txt"
   "sequential/CMakeLists.txt"
   "valuation/CMakeLists.txt"
@@ -51,7 +50,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "eth/binance/CMakeFiles/CMakeDirectoryInformation.cmake"
   "sequential/CMakeFiles/CMakeDirectoryInformation.cmake"
   "parallel/CMakeFiles/CMakeDirectoryInformation.cmake"
   "valuation/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -59,7 +57,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "eth/binance/CMakeFiles/eth-binance.dir/DependInfo.cmake"
   "sequential/CMakeFiles/sequential.dir/DependInfo.cmake"
   "parallel/CMakeFiles/parallel.dir/DependInfo.cmake"
   )
